@@ -1,0 +1,22 @@
+{
+  "name": "taskmill-code-arbitrary",
+  "version": "1.0.0",
+  "description": "arbitrary code runner",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/a7medkamel/taskmill-code-arbitrary.git"
+  },
+  "author": "a7medkamel <ak@ahmedkamel.net>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/a7medkamel/taskmill-code-arbitrary/issues"
+  },
+  "homepage": "https://github.com/a7medkamel/taskmill-code-arbitrary#readme",
+  "dependencies": {
+    "underscore": "^1.8.3"
+  }
+}
