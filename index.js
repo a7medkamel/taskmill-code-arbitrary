@@ -15,7 +15,7 @@ Code.prototype.run = function(req, res, next) {
   });
 
   d.run(() => {
-    var context   = vm.createContext(_.defaults({ module : {} }, global))
+    var context   = vm.createContext(_.defaults({ module : {}, require : require }, global))
       , content   = this.data.content
       , filename  = this.data.filename
       , script    = new vm.Script(content, { filename : filename })
