@@ -16,9 +16,9 @@ Code.prototype.run = function(req, res, next) {
 
   d.run(() => {
     var context   = vm.createContext(_.defaults({ module : {}, require : require }, global))
-      , content   = this.data.content
+      , blob      = this.data.blob
       , filename  = this.data.filename
-      , script    = new vm.Script(content, { filename : filename })
+      , script    = new vm.Script(blob, { filename : filename })
       ;
 
     // todo [akamel] can throw 'Script execution timed out.' explain to user / otherwise hard to understand
