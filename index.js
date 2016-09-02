@@ -28,7 +28,6 @@ Code.prototype.run = function(req, res, next) {
     if (_.isFunction(fct)) {
       fct.call(req.app, req, res, next);
     } else {
-      // todo [akamel] unset content-type header
       var err = new Error('module.exports not set to a function');
       err.help_url = 'https://taskmill.io/help';
 
